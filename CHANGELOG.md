@@ -1,5 +1,8 @@
 # CHANGELOG
 
+### 10.1
+AlertAction now supports an icon.
+
 ### 10.0
 This release brings Swift 5.0 compatibility.
 
