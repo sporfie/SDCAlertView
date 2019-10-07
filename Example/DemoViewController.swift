@@ -36,7 +36,7 @@ final class DemoViewController: UITableViewController {
             if i == 0 {
                 alert.addAction(AlertAction(title: "Cancel", style: .preferred))
             } else if i == 1 {
-                alert.addAction(AlertAction(title: "OK", style: .normal))
+				alert.addAction(AlertAction(title: "OK", style: .normal, icon: UIImage(named: "tl_tagged")))
             } else if i == 2 {
                 alert.addAction(AlertAction(title: "Delete", style: .destructive))
             } else {

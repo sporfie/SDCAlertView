@@ -8,12 +8,13 @@ public class AlertAction: NSObject {
     /// parameter style:   The action's style
     /// parameter handler: An optional closure that's called when the user taps on this action
     @objc
-    public convenience init(title: String?, style: AlertAction.Style, handler: ((AlertAction) -> Void)? = nil)
+    public convenience init(title: String?, style: AlertAction.Style, icon: UIImage? = nil, handler: ((AlertAction) -> Void)? = nil)
     {
         self.init()
         self.title = title
         self.style = style
         self.handler = handler
+        self.icon = icon
     }
 
     @objc
@@ -22,13 +23,14 @@ public class AlertAction: NSObject {
     /// - parameter attributedTitle: An optional stylized title
     /// - parameter style:           The action's style
     /// - parameter handler:         An optional closure that is called when the user taps on this action
-    public convenience init(attributedTitle: NSAttributedString?, style: AlertAction.Style,
+    public convenience init(attributedTitle: NSAttributedString?, style: AlertAction.Style, icon: UIImage? = nil,
         handler: ((AlertAction) -> Void)? = nil)
     {
         self.init()
         self.attributedTitle = attributedTitle
         self.style = style
         self.handler = handler
+        self.icon = icon
     }
 
     /// A closure that gets executed when the user taps on this actions in the UI
@@ -49,6 +51,10 @@ public class AlertAction: NSObject {
     /// The action's style.
     @objc
     internal(set) public var style: AlertAction.Style = .normal
+
+    /// The iconfor the action.
+    @objc
+    private(set) public var icon: UIImage?
 
     /// The action's button accessibility identifier
     @objc

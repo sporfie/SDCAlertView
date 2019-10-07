@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,28 +22,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="113" height="50"/>
                         <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pjm-mv-U5R">
+                        <rect key="frame" x="12" y="12" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pjm-mv-U5R" secondAttribute="height" multiplier="1:1" id="cwB-DJ-xnh"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.57999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-JJ-NDf">
-                        <rect key="frame" x="12" y="15" width="89" height="21"/>
+                        <rect key="frame" x="12" y="15" width="89" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="Pjm-mv-U5R" firstAttribute="leading" secondItem="bje-m2-aTd" secondAttribute="leading" constant="12" id="2LP-cJ-yfG"/>
                 <constraint firstItem="gA5-JJ-NDf" firstAttribute="centerY" secondItem="bje-m2-aTd" secondAttribute="centerY" id="7He-b7-nML"/>
-                <constraint firstItem="gA5-JJ-NDf" firstAttribute="leading" secondItem="bje-m2-aTd" secondAttribute="leading" constant="12" id="Lhl-y5-J3C"/>
+                <constraint firstAttribute="bottom" secondItem="Pjm-mv-U5R" secondAttribute="bottom" constant="12" id="DcY-58-vbn"/>
                 <constraint firstItem="9gu-Iy-uiI" firstAttribute="leading" secondItem="bje-m2-aTd" secondAttribute="leading" id="PVx-fv-iTh"/>
                 <constraint firstAttribute="trailing" secondItem="gA5-JJ-NDf" secondAttribute="trailing" constant="12" id="fZu-bh-ZN7"/>
+                <constraint firstItem="Pjm-mv-U5R" firstAttribute="top" secondItem="bje-m2-aTd" secondAttribute="top" constant="12" id="gmT-t0-5MY"/>
                 <constraint firstAttribute="bottom" secondItem="9gu-Iy-uiI" secondAttribute="bottom" id="oD2-4f-BcB"/>
                 <constraint firstItem="9gu-Iy-uiI" firstAttribute="top" secondItem="bje-m2-aTd" secondAttribute="top" id="tDC-31-6RI"/>
                 <constraint firstAttribute="trailing" secondItem="9gu-Iy-uiI" secondAttribute="trailing" id="vp5-cw-Iub"/>
+                <constraint firstItem="gA5-JJ-NDf" firstAttribute="leading" secondItem="bje-m2-aTd" secondAttribute="leading" constant="12" id="vvR-QN-tg3"/>
             </constraints>
             <size key="customSize" width="113" height="50"/>
             <connections>
                 <outlet property="highlightedBackgroundView" destination="9gu-Iy-uiI" id="1KY-NG-QHg"/>
+                <outlet property="imageView" destination="Pjm-mv-U5R" id="biJ-8W-VLj"/>
                 <outlet property="titleLabel" destination="gA5-JJ-NDf" id="SRI-s5-1Hc"/>
             </connections>
-            <point key="canvasLocation" x="265" y="363"/>
+            <point key="canvasLocation" x="-145.3125" y="-212.32394366197184"/>
         </collectionViewCell>
     </objects>
 </document>

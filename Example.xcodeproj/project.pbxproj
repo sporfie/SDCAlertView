@@ -15,6 +15,7 @@
 		D2C0AFD81BE7243800F31D0F /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0AFD71BE7243800F31D0F /* TestsViewController.swift */; };
 		D2C0AFD91BE725C900F31D0F /* SDCAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2515EE31BC1AA7700ED606F /* SDCAlertView.framework */; };
 		D2C0AFDA1BE725C900F31D0F /* SDCAlertView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2515EE31BC1AA7700ED606F /* SDCAlertView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E406811A234B1F5100A8DFF5 /* tl_tagged.png in Resources */ = {isa = PBXBuildFile; fileRef = E4068118234B1F5100A8DFF5 /* tl_tagged.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D2C0AFCF1BE7236A00F31D0F /* SDCAlertView_UI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCAlertView_UI_Tests.swift; sourceTree = "<group>"; };
 		D2C0AFD11BE7236A00F31D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C0AFD71BE7243800F31D0F /* TestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		E4068118234B1F5100A8DFF5 /* tl_tagged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tl_tagged.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D2515E721BC1A47F00ED606F /* AppDelegate.swift */,
 				D2515E741BC1A47F00ED606F /* DemoViewController.swift */,
 				D2C0AFD71BE7243800F31D0F /* TestsViewController.swift */,
+				E4068118234B1F5100A8DFF5 /* tl_tagged.png */,
 				D2515E761BC1A47F00ED606F /* Main.storyboard */,
 				D2515E7B1BC1A47F00ED606F /* LaunchScreen.storyboard */,
 				D2515E7E1BC1A47F00ED606F /* Info.plist */,
@@ -197,6 +200,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -233,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2515E7D1BC1A47F00ED606F /* LaunchScreen.storyboard in Resources */,
+				E406811A234B1F5100A8DFF5 /* tl_tagged.png in Resources */,
 				D2515E781BC1A47F00ED606F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
